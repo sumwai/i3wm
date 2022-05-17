@@ -1,8 +1,9 @@
 # 设置Mod键 Alt
 set $mod Mod1
-
 font pango:SauceCodePro 14
 
+include variables
+include startup
 
 ##############
 ## 快捷键绑定
@@ -60,7 +61,6 @@ bindsym $mod+Shift+r restart
 # 电源菜单
 bindsym $mod+Shift+e exec ~/.config/polybar/forest/scripts/powermenu.sh
 
-include startup
 
 
 ###################

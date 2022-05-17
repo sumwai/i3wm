@@ -1,5 +1,3 @@
-# 引入变量配置
-include variables
 
 # 启动 i3
 exec --no-startup-id dex --autostart --environment i3
