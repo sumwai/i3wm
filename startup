@@ -1,0 +1,33 @@
+# 引入变量配置
+include variables
+
+# 启动 i3
+exec --no-startup-id dex --autostart --environment i3
+
+
+# 启动 PHP 服务
+exec_always --no-startup-id "sudo $php_version -S $php_server -t $php_document_root $php_router"
+
+# feh 设置背景图片 
+exec_always --no-startup-id "feh --bg-fill --no-fehbg $wallpaper"
+
+# polybar 设置菜单栏
+exec_always --no-startup-id "sh ~/.config/polybar/launch.sh --$polybar_theme"
+
+# picom 启动窗口动效
+exec_always --no-startup-id "picom"
+
+# fcitx 启动输入法
+exec --no-startup-id "fcitx"
+
+# NetWorkManager 启动网络管理
+exec --no-startup-id nm-applet
+
+# bluetooth 启动并连接蓝牙
+exec --no-startup-id "bluetoothctl power on"
+exec --no-startup-id "bluetoothctl scan on"
+exec --no-startup-id "bluetoothctl connect $bluetooth_head"
+exec --no-startup-id "bluetoothctl scan off"
+
+# 映射CapsLock到Escape
+exec_always --no-startup-id "setxkbmap -option caps:escape"

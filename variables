@@ -1,0 +1,17 @@
+
+# 设置PHP服务信息
+set $php_version 'php56'
+set $php_server '127.0.0.1:80'
+set $php_document_root '/var/php/framework/backend/pear-think-admin/public/'
+set $php_router '$php_document_root/router.php'
+
+# 设置背景图片信息
+set $wallpaper '/var/sumwai/polybar/themes/polybar-themes-master/wallpapers/bg_10.jpg'
+
+# 设置菜单栏主题
+set $polybar_theme 'grayblocks'
+
+# 设置蓝牙耳机设备
+set $bluetooth_head '41:42:73:D4:BE:48'
+
+
