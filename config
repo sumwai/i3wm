@@ -68,6 +68,7 @@ bindsym $mod+Shift+e exec ~/.config/polybar/forest/scripts/powermenu.sh
 ###################
 
 set $move_chrome_to_window 2
+set $move_weixin_to_window 3
 set $move_music_to_window 10
 
 ###
@@ -76,6 +77,8 @@ set $move_music_to_window 10
 
 # Google Chrome -> 2
 assign [class="Google-chrome"] → $move_chrome_to_window
+# 微信 -> 3
+assign [class="weixin"] → $move_weixin_to_window
 # 网易云音乐 -> 10
 assign [class="Netease-cloud-music-gtk"] → $move_music_to_window
 
