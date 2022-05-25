@@ -69,6 +69,7 @@ bindsym $mod+Shift+e exec ~/.config/polybar/forest/scripts/powermenu.sh
 
 set $move_chrome_to_window 2
 set $move_weixin_to_window 3
+set $move_goland_to_window 4
 set $move_music_to_window 10
 
 ###
@@ -82,6 +83,7 @@ assign [class="weixin"] → $move_weixin_to_window
 # 网易云音乐 -> 10
 assign [class="Netease-cloud-music-gtk"] → $move_music_to_window
 
+assign [class="jetbrains-goland"] → $move_goland_to_window
 
 ###
 # 窗口边框
@@ -104,6 +106,9 @@ for_window [class="^.*"] floating enable
 for_window [class="Alacritty"] floating disable
 # 取消 Google Chrome 的浮动效果
 for_window [class="Google-chrome"] floating disable
+# 取消 Goland 的浮动效果
+for_window [class="jetbrains-goland"] floating disable
+
 
 
 ###
