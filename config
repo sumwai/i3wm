@@ -36,6 +36,9 @@ bindsym $mod+q kill
 # 打开启动菜单
 bindsym $mod+d exec --no-startup-id launcher
 
+# 调整polybar, launcher, powermenu颜色
+bindsym $mod+Shift+c exec --no-startup-id color-switch
+
 # 横向拆分下一个窗口
 #bindsym $mod+h split h
 

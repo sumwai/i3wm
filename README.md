@@ -54,16 +54,18 @@ if use this config, you should install this softwares
 
 > software 
 
-
 > `launcher` is from the [polybar](https://github.com/sumwai/polybar) `scripts/launcher.sh`, you should clone this repo to get it, and move it to `PATH`/launcher
 > 
 > `powermenu` is from the [polybar](https://github.com/sumwai/polybar) `scripts/powermenu.sh`, you should clone this repo to get it, and move it to `PATH`/powermenu
+> 
+> `color-switch` is from the [polybar](https://github.com/sumwai/polybar) `scripts/color-switch.sh`, you should clone this repo to get it, and move it to `PATH`/color-switch
 
 
 | Key | Command | Comment |
 | --- | ------- | ------- |
 | `mod`+`d` | launcher | 打开启动菜单 |
 | `mod`+`Shift`+`e` | powermenu | 打开电源菜单 |
+| `mod`+`Shift`+`c` | color-switch | 打开polybar颜色选择 |
 | `mod`+`Return` | alacritty --config-file=$HOME/.config/alacritty/alacritty.yml | 打开alacritty终端 |
 
 
