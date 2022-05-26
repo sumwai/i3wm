@@ -8,7 +8,7 @@ set $php_router '/var/php/framework/backend/pear-think-admin/public/router.php'
 set $wallpaper '/var/sumwai/polybar/themes/polybar-themes-master/wallpapers/bg_10.jpg'
 
 # 设置菜单栏主题
-set $polybar_theme 'grayblocks'
+set $polybar_theme 'main'
 
 # 设置蓝牙耳机设备
 set $bluetooth_head '41:42:73:D4:BE:48'

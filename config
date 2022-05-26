@@ -34,7 +34,7 @@ bindsym $mod+Return exec alacritty --config-file=$HOME/.config/alacritty/alacrit
 bindsym $mod+q kill
 
 # 打开启动菜单
-bindsym $mod+d exec --no-startup-id sh ~/.config/polybar/forest/scripts/launcher.sh 
+bindsym $mod+d exec --no-startup-id launcher
 
 # 横向拆分下一个窗口
 #bindsym $mod+h split h
@@ -59,8 +59,7 @@ bindsym $mod+Shift+f floating toggle
 # 重启i3
 bindsym $mod+Shift+r restart
 # 电源菜单
-bindsym $mod+Shift+e exec ~/.config/polybar/forest/scripts/powermenu.sh
-
+bindsym $mod+Shift+e exec powermenu
 
 
 ###################
