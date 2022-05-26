@@ -16,6 +16,25 @@ i3 restart
 
 ## Usage
 
+if use this config, you should install this softwares
+
+> required
+
+- rofi: show powermenu and launcher
+- flameshot: screenshot
+- alacritty: terminal
+- networkmanager: network manager
+- polybar: show launcher, powermenu
+
+> optional
+
+- feh: wallpaper
+- php56: start php server for your php project
+- picom: tansparent window
+- fcitx: input method
+- bluez: bluetooth library
+- pulseaudio-bluetooth: bluetooth audio
+
 ### Variables
 
 ### Startup 
@@ -35,10 +54,16 @@ i3 restart
 
 > software 
 
+
+> `launcher` is from the [polybar](https://github.com/sumwai/polybar) `scripts/launcher.sh`, you should clone this repo to get it, and move it to `PATH`/launcher
+> 
+> `powermenu` is from the [polybar](https://github.com/sumwai/polybar) `scripts/powermenu.sh`, you should clone this repo to get it, and move it to `PATH`/powermenu
+
+
 | Key | Command | Comment |
 | --- | ------- | ------- |
-| `mod`+`d` | sh ~/.config/polybar/forest/scripts/launcher.sh | 打开启动菜单 |
-| `mod`+`Shift`+`e` | sh ~/.config/polybar/forest/scripts/powermenu.sh | 打开电源菜单 |
+| `mod`+`d` | launcher | 打开启动菜单 |
+| `mod`+`Shift`+`e` | powermenu | 打开电源菜单 |
 | `mod`+`Return` | alacritty --config-file=$HOME/.config/alacritty/alacritty.yml | 打开alacritty终端 |
 
 
